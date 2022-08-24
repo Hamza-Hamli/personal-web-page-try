@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec1 {
+    background-color: black;
+    padding-top: 0em;
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* justify-content: center; */
+}
+
+nav ul .buttons {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.Lion-5 {
+    /* border-color: black; */
+    border-radius: 100%;
+    background-color: gold;
+    transition: all 0.3s ease 0.1s;
+}
+
+.Lion-5:hover {
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease 0.1s;
+    cursor: pointer;
+    color:gold;
+}
+
+.bn {
+    padding: 9px 18px;
+    background-color: #000000;
+    color: gold;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.1s;
+}
+
+.bn:hover {
+    color: black;
+    background-color: gold;
+    transition: all 0.3s ease 0.1s;
+}
+
+hr {
+    border-color: gold;
+}
+
+hr:hover {
+    border-color: white;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4em;
+    background-color:rgb(252, 233, 210);
+    height: 100vh;
+}
+.content {
+    display: flex;
+    align-items:center;
+    height: 50%;
+    justify-content:space-between;
+    
+}
+
+.name-breif {
+    padding-left: 3em;
+    /* position: relative; */
+    /* display:inline-flex; */
+    justify-content: center;
+}
+
+.name-breif .breif .CV {
+    padding: 0.3em;
+}
+.scoialmedia ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.scoialmedia ul .sbn {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 30%;
+}
+
+.portait {
+    width: ;
+}
