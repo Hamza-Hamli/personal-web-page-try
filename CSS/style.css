@@ -60,6 +60,7 @@ nav ul .buttons {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0.1s; */
+    font-weight: bold;
     font-size: 1rem;
     display: inline-block;
     cursor: pointer;
@@ -116,7 +117,13 @@ nav ul .buttons {
     text-shadow: none;
 }
 
-.bn:hover::after {
+.bn:hover::before,
+.bn:focus::before {
+    opacity: 1;
+}
+
+.bn:hover::after,
+.bn:focus::after {
     opacity: 1;
 }
 
