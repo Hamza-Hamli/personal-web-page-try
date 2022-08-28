@@ -7,38 +7,12 @@
 }
 
 .sec1 {
-    /* background-color: black; */
     padding-top: 1em;
     padding-bottom: 1em;
-    /* padding-left: 3em;
-    padding-right: 3em; */
     display: flex;
     align-items: center;
     justify-content:center;
 }
-
-
-/* nav ul .buttons {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    padding-left: 10px;
-    align-items:center;
-    justify-content: space-between;
-} */
-
-/* .Lion-5 {
-    border-radius: 100%;
-    background-color: gold;
-    transition: all 0.3s ease 0.1s;
-}
-
-.Lion-5:hover {
-    background-color: rgb(255, 255, 255);
-    transition: all 0.3s ease 0.1s;
-    cursor: pointer;
-    color:rgb(255, 215, 0);
-} */
 
 /*start neon buttons*/
 :root {
@@ -53,14 +27,6 @@
 }
 
 .bn {
-    /* padding: 9px 18px;
-    background-color: #000000;
-    color: gold;
-    border: none;
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0.1s; */
     font-weight: bold;
     font-size: 1rem;
     display: inline-block;
@@ -134,12 +100,7 @@ hr {
     border-color: gold;
 }
 
-hr:hover {
-    border-color: white;
-}
-
 .sec2 {
-    /* background-image: url(../images/vswallpaper4.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -186,30 +147,8 @@ hr:hover {
     padding: 0.3em;
 }
 
-.socialmedia ul a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.5em;
-}
-
-.socialmedia {
-    display: flex;
-    justify-content: center;
-}
-.socialmedia ul .sbn {
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border-radius: 30%;
-    width: 80px;
-}
 
 .theimages {
-    /* margin: 2em;
-    display: flex;
-    align-items:center;
-    width: 30%;
-    justify-content:center; */
     width: 45%;
     height: 80%;
     position: absolute;
@@ -225,11 +164,6 @@ hr:hover {
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
 }
-
-.portrato {
-    /* width: 250px; */
-    height: 250px;
-}
 .theimages:hover .ink {
     bottom: 35px;
 }
@@ -238,3 +172,7 @@ hr:hover {
     left: 35%;
 }
 
+
+.portrato {
+    height: 250px;
+}
