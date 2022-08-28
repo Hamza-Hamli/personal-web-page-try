@@ -3,28 +3,31 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
 }
 
 .sec1 {
-    background-color: black;
-    padding-top: 0em;
-    padding-left: 1em;
+    /* background-color: black; */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* padding-left: 3em;
+    padding-right: 3em; */
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
 }
 
 
-nav ul .buttons {
+/* nav ul .buttons {
     display: flex;
     width: 90%;
     margin: auto;
-    padding: 20px 0;
+    padding-left: 10px;
     align-items:center;
     justify-content: space-between;
-}
+} */
 
-.Lion-5 {
+/* .Lion-5 {
     border-radius: 100%;
     background-color: gold;
     transition: all 0.3s ease 0.1s;
@@ -35,12 +38,11 @@ nav ul .buttons {
     transition: all 0.3s ease 0.1s;
     cursor: pointer;
     color:rgb(255, 215, 0);
-}
+} */
 
 /*start neon buttons*/
 :root {
-    --clr-neon: hsl(317 100% 54%);
-    /* --clr-neon: rgb(255, 215, 0); */
+    --clr-neon: hsl(51, 100%, 50%);
     --clr-bg: hsl(323 21% 16%);
   }
 
@@ -49,7 +51,6 @@ nav ul .buttons {
 *::after {
   box-sizing: border-box;
 }
-/*end neon buttons*/
 
 .bn {
     /* padding: 9px 18px;
@@ -67,7 +68,7 @@ nav ul .buttons {
     text-decoration: none;
     color: var(--clr-neon);
     border: var(--clr-neon) 0.125em solid;
-    padding: 0.25em 1em;
+    padding: 0.3em 1em;
     margin-left: 3em;
     background-color: #000000;
     border-radius: 0.25em;
@@ -127,6 +128,8 @@ nav ul .buttons {
     opacity: 1;
 }
 
+/*end neon buttons*/
+
 hr {
     border-color: gold;
 }
@@ -136,7 +139,7 @@ hr:hover {
 }
 
 .sec2 {
-    background-image: url(../images/vswallpaper4.jpg);
+    /* background-image: url(../images/vswallpaper4.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -165,18 +168,21 @@ hr:hover {
 
 .name h1.hamza{
     font-size: 60px;
+    color:white;
 }
 
 .surname {
     color:#007ddd;
-
 }
 
 .breif p {
     font-size: 20px;
+    color:white;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.name-breif .breif .CV {
+.name-breif .breif .bn {
     padding: 0.3em;
 }
 
@@ -198,14 +204,37 @@ hr:hover {
     width: 80px;
 }
 
-.theimage {
-    margin: 2em;
+.theimages {
+    /* margin: 2em;
     display: flex;
     align-items:center;
     width: 30%;
-    justify-content:center;
+    justify-content:center; */
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
 }
 
-.portraito {
-    width: 250px;
+.theimages img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
 }
+
+.portrato {
+    /* width: 250px; */
+    height: 250px;
+}
+.theimages:hover .ink {
+    bottom: 35px;
+}
+
+.theimages:hover .portrato {
+    left: 35%;
+}
+
