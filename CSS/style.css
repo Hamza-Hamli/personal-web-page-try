@@ -3,15 +3,17 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
     background-color:black;
 }
 
 .sec1 {
-    /* padding-top: 1em;
-    padding-bottom: 1em; */
     display: flex;
     align-items: center;
     justify-content:center;
+    background-color:black;
 }
 
 .logo {
@@ -23,13 +25,14 @@
     margin-right: 15em;
     
 }
+
 /*start neon buttons*/
+
 :root {
     --clr-neon: hsl(51, 100%, 50%);
     --clr-bg: hsl(323 21% 16%);
-  }
+}
 
-  *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -47,10 +50,7 @@
     margin-left: 3em;
     background-color: #000000;
     border-radius: 0.25em;
-
-    text-shadow: 
-    0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
     box-shadow: inset 0 0 0.6em 0 var(--clr-neon), 0 0 1em 0 var(--clr-neon);
     position: relative;
     transition: opacity 0.3s linear;
@@ -58,14 +58,13 @@
 
 .bn::before {
     pointer-events: none;
-    content: "";
+    content:"";
     position: absolute;
     background-color: var(--clr-neon);
     top: 120%;
     left: 0;
     width: 100%;
     height: 60%;
-
     transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(1em);
     opacity: 0.7;
@@ -85,9 +84,6 @@
 
 .bn:hover,
 .bn:focus {
-    /* color: black;
-    background-color: gold;
-    transition: all 0.3s ease 0.1s; */
     background-color: var(--clr-neon);
     color: var(--clr-bg);
     text-shadow: none;
@@ -115,16 +111,16 @@ hr {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    /* background-color:rgb(252, 233, 210); */
     height: 93vh;
+    background-color:black;
 }
+
 .content {
     margin: 2em;
     display: flex;
     align-items:center;
     width: 70%;
-    justify-content:center;
-    
+    justify-content:center;   
 }
 
 .name-breif {
@@ -145,6 +141,10 @@ hr {
     color:#007ddd;
 }
 
+.breif {
+    width: 60%;
+}
+
 .breif p {
     font-size: 20px;
     color:white;
@@ -156,9 +156,8 @@ hr {
     padding: 0.3em;
 }
 
-
 .theimages {
-    width: 45%;
+    width: 35%;
     height: 80%;
     position: absolute;
     bottom: 0;
@@ -173,6 +172,7 @@ hr {
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
 }
+
 .theimages:hover .ink {
     bottom: 35px;
 }
@@ -180,7 +180,6 @@ hr {
 .theimages:hover .portrato {
     left: 35%;
 }
-
 
 .portrato {
     height: 250px;
