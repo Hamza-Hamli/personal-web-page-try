@@ -134,6 +134,43 @@ hr {
     padding-left: 3em;
 }
 
+/*Start typing animation*/
+
+div.name h1:nth-child(2) {
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    padding: 0.5em;
+    position: relative;
+}
+
+.surname {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.name h1:nth-child(2)::after {
+    content:"|";
+    position: absolute;
+    right: 0;
+    color:rgb(255, 255, 255);
+    background-color:black;
+    width: 100%;
+    animation:  typing 4s steps(16) alternate infinite, line 0.8s infinite;
+}
+
+@keyframes typing {
+    to{
+        width: 0%;
+    }
+}
+
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
+/*end typing animation*/
+
 .coder {
     color: rgb(212, 144, 18);
     font-size: 40px;
