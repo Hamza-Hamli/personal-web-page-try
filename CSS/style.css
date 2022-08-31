@@ -154,7 +154,7 @@ div.name h1:nth-child(2)::after {
     color:rgb(255, 255, 255);
     background-color:black;
     width: 100%;
-    animation:  typing 4s steps(16) alternate infinite, line 0.8s infinite;
+    animation:  typing 3s steps(16) alternate infinite, line 0.8s infinite;
 }
 
 @keyframes typing {
@@ -168,6 +168,7 @@ div.name h1:nth-child(2)::after {
         color: transparent;
     }
 }
+
 
 /*end typing animation*/
 
@@ -217,8 +218,13 @@ div.name h1:nth-child(2)::after {
     transition: bottom 1s, left 1s;
 }
 
+div .ink {
+    width: 600px;
+    height: 600px
+}
+
 .theimages:hover .ink {
-    bottom: 35px;
+    bottom: 50px;
 }
 
 .theimages:hover .portrato {
