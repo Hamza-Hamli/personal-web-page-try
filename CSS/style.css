@@ -219,8 +219,9 @@ div.name h1:nth-child(2)::after {
 }
 
 div .ink {
-    width: 600px;
-    height: 600px
+    width: 500px;
+    height: 450px;
+    /* bottom: 10em; */
 }
 
 .theimages:hover .ink {
