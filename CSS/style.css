@@ -216,6 +216,10 @@ div.name h1:nth-child(2)::after {
     bottom: 0;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
+    -webkit-transition: bottom 1s, left 1s;
+    -moz-transition: bottom 1s, left 1s;
+    -ms-transition: bottom 1s, left 1s;
+    -o-transition: bottom 1s, left 1s;
 }
 
 div .ink {
